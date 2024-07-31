@@ -1,0 +1,16 @@
+{
+  "name": "calo-food-watcher",
+  "version": "1.0.0",
+  "description": "A full-stack application for job processing and frontend web interface.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd job-api && npm run dev\" \"cd job-web && npm start\"",
+    "install-job-api": "cd Job-api && npm install",
+    "install-job-web": "cd job-web && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "author": "Ali Jawad",
+  "license": "ISC"
+}
