@@ -2,7 +2,7 @@
 
 JOB-WEB is a React application that allows users to view, create, and manage job listings. It utilizes Material-UI for styling and Context API for state management, with Axios handling API requests.
 
-https://github.com/user-attachments/assets/017f43cc-b2e8-49f9-b986-3033096f3345
+https://github.com/user-attachments/assets/21e41599-d849-4798-ba58-2392c8a9bae0
 
 ## Features
 
