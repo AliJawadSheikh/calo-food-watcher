@@ -27,8 +27,8 @@ export const JobProvider: React.FC<{ children: ReactNode }> = ({
 
   const createJob = async (): Promise<void> => {
     try {
-      await createJobApi();
-      await fetchJobs();
+      const newJob = await createJobApi();
+      setJobs((prevJobs) => [...prevJobs, newJob]);
     } catch (error) {
       showErrorToast('Error While Creating Job');
     }

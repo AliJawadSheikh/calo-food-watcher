@@ -25,7 +25,7 @@ export const createJob = async (req: Request, res: Response) => {
     processJob(newJob);
 
     logger.info(`Job ${newJob.id} created successfully.`);
-    res.status(201).json({ id: newJob.id });
+    res.status(201).json(newJob);
   } catch (error) {
     logger.error('Error creating job:', error);
     res.status(500).json({ error: 'Internal Server Error' });

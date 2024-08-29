@@ -18,9 +18,9 @@ export const fetchJobs = async (): Promise<Job[]> => {
  * Create a new job.
  * Sends a POST request to '/jobs' to create a new job (data can be added if needed).
  */
-export const createJob = async (): Promise<void> => {
+export const createJob = async (): Promise<Job> => {
   try {
-    await post('/jobs', {});
+    return await post('/jobs', {});
   } catch (error) {
     console.error('Error creating job:', error);
     throw error;
